@@ -14,7 +14,7 @@ def gpu_test():
     return f"GPU: {torch.cuda.get_device_name(0)} | took {time.time()-t:.2f}s"
 
 with gr.Blocks() as demo:
-    gr.Markdown("# sketch2shape: GPU test")
+    gr.Markdown("# dribble3d: GPU test")
     btn = gr.Button("Run GPU test")
     out = gr.Textbox(label="Result")
     btn.click(gpu_test, outputs=out)
